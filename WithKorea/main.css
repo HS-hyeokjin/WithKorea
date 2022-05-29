@@ -21,7 +21,7 @@ body {
 }
 
 #container {
-    width: 1100px;
+    width: 1000px;
     margin: 0px auto;
 }
 
@@ -61,16 +61,15 @@ a {
     overflow: hidden;
 }
 
-#middle .box{
-    width: 250px; height: 250px;
-    background-color: red;
-    margin : 10px;
-    padding: 10px;
+#middle img{
+    width: 220px; height: 220px;
+    margin : 5px;
+    padding: 5px;
     float: left;
 }
 
 
 #bottom {
-    background-color: blueviolet;
+    font-size: 20px;
 }
 
