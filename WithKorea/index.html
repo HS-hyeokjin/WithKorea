@@ -1,111 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <head>
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="top.css">
+    <script>
+        $(document).ready(function(){
+    $(".a img").animate({width: 1600}, 2000, 
+    function(){
+        console.log("1번끝")
+    }).animate({
+        height: 1000
+    },2000,function(){
+        console.log("2번끝")
+    }).animate({
+        width: 1600
+    
+    })  
+})
+        function over(obj) 
+        {
+            obj.style.background="rgb(250, 250, 255)";
+        }
+        function out(obj)
+        {
+            obj.style.background="white";
+        }
+    </script>
+        <style>
+            .box{
+                width: 100px; height: 100px;
+                background-color: orangered;
+            }
+        </style>
 </head>
-<img src="images/main.jpg" alt="My Image" loading="lazy">
 
 <body>
+    <div class="a">
+    <img src="https://data.1freewallpapers.com/detail/panorama-skyscraper-seoul-south-korea.jpg" alt="My Image" loading="lazy">
+</div>
     <div class="top_bar">
         <h2> WithKorea</h2>
         <ul class="navbar__menu">
-            <li><a href="index.html">main</a></li>
-            <li><a href="#">서울</a></li>
-            <li><a href="#">부산</a></li>
-            <li><a href="#">대구</a></li>
-            <li><a href="#">전주</a></li>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="seoul.html">Seoul</a></li>
+            <li><a href="busan.html">Busan</a></li>
+            <li><a href="daegu.html">Daegu</a></li>
+            <li><a href="jeju.html">Jeju</a></li>
         </ul>
     </div>
 
-<div id ="container">
-    <div id="top">  대한민국의 중심 서울</div>
-    <div id="middle">
-        <img src="images/sbanpo.jpg">
-        <img src="images/sbong.jpg"> 
-        <img src="images/snamsan1.jpg"> 
-        <img src="images/sbuk1.jpg">  
-    </div>
-    <div id="bottom">서울은 한강의 기적의 영향으로 급속한 개발의 힘도 강하게 미쳤기 때문에 전주나 경주에 비해서는 '한국적인 미'는 제대로 살아있다고 보기 힘들다. 하지만 근 500년 전부터 수도였던 특성상 아직도 많은 유산이 남아있으며, 오리엔탈리즘을 쫓아 이국적인 동양의 정취를 느끼고자 서울에 들른 외국인 관광객들은 오히려 처마와 고층 건물이 한곳에 공존하는 모습을 보고 신기함을 느껴 "과거와 현재가 잘 어우러진 메트로폴리탄"이라는 평을 한다. 특히 북촌한옥마을이나 남산골한옥마을, 경복궁이나 창덕궁, 창경궁을 포함한 여러 역사유산이 서울에 존재해 외국 관광객들을 끌어들이며, 남대문시장 같은 재래시장 또한 관광객들이 많이 찾는다.
-
-        20세기 초반 이전만 해도 사대문 바깥쪽은 논밭과 산들로 어우러진 녹지였다. 이 지역들은 과거 경기도 소속의 지역들[58]이었다가 서울시로 편입된 지역들이다. 지금은 사대문 밖 지역 중에서도 가장 호화롭고 부유한 지역인 강남 지역도 상당수 경기도 지역 소속이었다. 도시로 변한 건 20세기 이후이니 사대문 밖에는 전통적인 볼거리가 적다.
-        
-        너무 서울이라는 도시에 익숙해진 많은 한국인들의 편견과는 달리, 팬데믹 기간 이외의 서울은 이미 전 세계에서 많은 관광객들이 찾는 도시 중 하나다. 서울은 쇼핑 목적으로 뛰어난 관광지라 할 수 있다. 2014년 CNN에서 뽑은 세계 12대 쇼핑 도시 중 하나로 꼽히기도 했다. # 각종 면세점과 백화점들은 관광객들의 지갑을 열게 만들었고, 때마침 2000년대부터 불어닥친 한류 열풍은 관광계의 큰 손인 중국인들을 대거 포섭하면서 꾸준히 많은 관광객들을 유치하게 되었다. 명동에서는 이미 은련카드와 알리페이의 광고가 도배될 정도.
+    <div id="container">
+        <div id="top"> 대한민국의 중심 서울</div>
+        <div id="middle">
+            <img src="https://t1.daumcdn.net/cfile/tistory/990CAE3F5D2E590C20?original">
+            <img src="https://t1.daumcdn.net/cfile/tistory/99D04B3B5D2E59111F?original">
+            <img src="https://t1.daumcdn.net/cfile/tistory/99C2F6345D2E59511F?original">
+            <img src="https://t1.daumcdn.net/cfile/tistory/99D0A33B5D2E59131F?original">
+            
         </div>
-</div>
+        <div id="bottom" onmouseover="over(this)" onmouseout="out(this)">서울은 한강의 기적의 영향으로 급속한 개발의 힘도 강하게 미쳤기 때문에 전주나 경주에 비해서는 '한국적인 미'는 제대로 살아있다고 보기 힘들다. 하지만 근 500년 전부터 수도였던 특성상 아직도 많은 유산이 남아있으며, 오리엔탈리즘을 쫓아 이국적인 동양의 정취를 느끼고자 서울에 들른 외국인 관광객들은 오히려 처마와 고층 건물이 한곳에 공존하는 모습을 보고 신기함을 느껴 "과거와 현재가 잘 어우러진 메트로폴리탄"이라는 평을 한다. 특히 북촌한옥마을이나 남산골한옥마을, 경복궁이나 창덕궁, 창경궁을 포함한 여러 역사유산이 서울에 존재해 외국 관광객들을 끌어들이며, 남대문시장 같은 재래시장 또한 관광객들이 많이 찾는다.
 
-<div id ="container">
-    <div id="top"> 그린 스마트 도시 부산</div>
-    <div id="middle">
-        <img src="images/sbanpo.jpg"> 
-        <img src="images/sbong.jpg"> 
-        <img src="images/snamsan1.jpg"> 
-        <img src="images/sbuk1.jpg">  
+            20세기 초반 이전만 해도 사대문 바깥쪽은 논밭과 산들로 어우러진 녹지였다. 이 지역들은 과거 경기도 소속의 지역들[53]이었다가 서울시로 편입된 지역들이다. 지금은 사대문 밖 지역 중에서도 가장 호화롭고 부유한 지역인 강남 지역도 상당수 경기도 지역 소속이었다. 도시로 변한 건 20세기 이후이니 사대문 밖에는 전통적인 볼거리가 적다.
+            
+            너무 서울이라는 도시에 익숙해진 많은 한국인들의 편견과는 달리, 팬데믹 기간 이외의 서울은 이미 전 세계에서 많은 관광객들이 찾는 도시 중 하나다. 서울은 쇼핑 목적으로 뛰어난 관광지라 할 수 있다. 2014년 CNN에서 뽑은 세계 12대 쇼핑 도시 중 하나로 꼽히기도 했다. # 각종 면세점과 백화점들은 관광객들의 지갑을 열게 만들었고, 때마침 2000년대부터 불어닥친 한류 열풍은 관광계의 큰 손인 중국인들을 대거 포섭하면서 꾸준히 많은 관광객들을 유치하게 되었다. 명동에서는 이미 은련카드와 알리페이의 광고가 도배될 정도.
+            
+            서울 통계 정보 시스템을 통해 알아보면 대략 서울에 온 외국인 관광객 중 절반 정도가 중국인이다. 그리고 관광객의 대부분이 쇼핑을 껴서 즐기다 보니 관광객 규모 대비 수익률이 높은 것도 주목해야 한다. 신세계그룹, 현대백화점, 이랜드그룹 등의 유통업체들도 서울에 대형 SC 프로젝트를 추진 중이다. 그렇다고 동아시아에서만 관광객이 찾아드는 것은 아니고, 서구 관광객들도 300만 명이 넘는 수준을 유지 중이다. 다만 중국인의 비율이 너무 많아 외국인 관광객의 다변화가 필요하다는 필요성이 대두되고 있다.
+        </div>
     </div>
-    <div id="bottom">asdsadadaddsadadaddsad
-        adaddsadadaddsadadaddsadadaddsadada
-        ddsadadaddsadadaddsadadaddsadadaddsa
-        dadaddsadadaddsadadaddsadadaddsadada
-        dsadadaddsadadaddsadadaddsadadaddsada
-        daddsadadaddsadadaddsadadaddsadadadds
-        adadaddsasdsadadaddsadadaddsadadaddsad
-        adaddsadadaddsadadaddsadadaddsadadaddsa
-        dadaddsadadaddsadadaddsadadaddsadadadds
-        adadaddsadadaddsadadaddsadadaddsadadadd
-        sadadaddsadadaddsadadaddsadadaddsadadadd
-        sadadaddsadadaddsadadaddsadadaddsadadadd
-        sadadaddsadadadsadadadadaddsadadaddsadad
-        addsadadadsadad</div>
-</div>
 
-<div id ="container">
-    <div id="top"> 내 삶이 더 좋아지는 대구</div>
-    <div id="middle">
-        <img src="images/sbanpo.jpg">
-        <img src="images/sbong.jpg"> 
-        <img src="images/snamsan1.jpg"> 
-        <img src="images/sbuk1.jpg">  
+    <div id="container">
+        <div id="top"> 그린 스마트 도시 부산</div>
+        <div id="middle">
+            <img
+                src="https://p4.wallpaperbetter.com/wallpaper/931/307/640/dawn-morning-south-korea-busan-wallpaper-preview.jpg">
+            <img src="https://p4.wallpaperbetter.com/wallpaper/512/1014/573/bridge-busan-gwan-wallpaper-preview.jpg">
+            <img src="https://p4.wallpaperbetter.com/wallpaper/445/360/985/busan-wallpaper-preview.jpg">
+            <img
+                src="https://p4.wallpaperbetter.com/wallpaper/140/352/958/gwangan-bridge-busan-south-korea-wallpaper-3840%C3%972400-wallpaper-preview.jpg">
+        </div>
+        <div id="bottom">인구 360만의 대한민국 제 2의 도시이자 세계로 통하는 대한민국의 관문인 부산은 온난한 기후와 수려한 환경 속에서 열정적이면서도 따듯한 기질을 길러온 시민들이 가꾸어온
+            도시입니다. 부산은 한국전쟁 이후 눈부신 발전을 거듭해 지금은 세계적인 슈퍼항만을 가진 해양물류의 중심도시이자 세계로 통하는 유라시아 대륙의 관문도시로 성장하였습니다. 또한 각종 대규모
+            국제행사의 성공적인 개최로 세계 속의 부산으로 당당히 어깨를 나란히 하며 세계인들의 발걸음이 끊이지 않는 관광도시로 명성을 더하고 있습니다. 특히 부산은 영화 · 영상 · 콘텐츠 · 금융 등
+            미래를 앞서가는 산업체계의 구축과 환경을 생각하는 녹색도시로서의 면모를 더해가는 풍요의 도시로 도약하고 있습니다.</div>
     </div>
-    <div id="bottom">asdsadadaddsadadaddsad
-        adaddsadadaddsadadaddsadadaddsadada
-        ddsadadaddsadadaddsadadaddsadadaddsa
-        dadaddsadadaddsadadaddsadadaddsadada
-        dsadadaddsadadaddsadadaddsadadaddsada
-        daddsadadaddsadadaddsadadaddsadadadds
-        adadaddsasdsadadaddsadadaddsadadaddsad
-        adaddsadadaddsadadaddsadadaddsadadaddsa
-        dadaddsadadaddsadadaddsadadaddsadadadds
-        adadaddsadadaddsadadaddsadadaddsadadadd
-        sadadaddsadadaddsadadaddsadadaddsadadadd
-        sadadaddsadadaddsadadaddsadadaddsadadadd
-        sadadaddsadadadsadadadadaddsadadaddsadad
-        addsadadadsadad</div>
-</div>
 
-<div id ="container">
-    <div id="top"> 한옥마을의 가치 전주</div>
-    <div id="middle">
-        <img src="images/sbanpo.jpg">
-        <img src="images/sbong.jpg"> 
-        <img src="images/snamsan1.jpg"> 
-        <img src="images/sbuk1.jpg">  
+    <div id="container">
+        <div id="top"> 내 삶이 더 좋아지는 대구</div>
+        <div id="middle">
+            <img src="http://www.daeguview.com/DATA/photo/thumb_b_20190930103233.jpeg">
+            <img src="http://www.daeguview.com/DATA/photo/thumb_b_20190930101908.jpg">
+            <img src="http://www.daeguview.com/DATA/photo/thumb_b_20190930102746.jpg">
+            <img src="http://www.daeguview.com/DATA/photo/thumb_b_20190909050706.jpg">
+        </div>
+        <div id="bottom">대구광역시(大邱廣域市, 영어: Daegu Metropolitan City)는 한반도 동남부 내륙에 있는 광역시이며, 대한민국 제3의 도시이다. 동쪽으로 경상북도 경산시,
+            영천시, 서쪽으로 고령군, 성주군, 북쪽으로 청송군, 군위군 남쪽으로 경상남도 창녕군과 인접한다. 팔공산과 비슬산 등 높은 산으로 둘러싸인 분지 지형으로 인해 대한민국에서 가장 기온이 높은 편에
+            속하는 도시이다.[주 1]　조선시대에는 경상 감영 소재지로서 영남 지방의 중심지였다. 섬유 산업을 중심으로 도시가 성장하면서 1981년 7월 1일 대구시가 달성군 월배읍·성서읍·공산면, 칠곡군
+            칠곡읍, 경산군 안심읍·고산면을 편입하여 직할시로 승격되었고, 1995년 3월 1일 달성군을 편입하였다. 동성로와 중앙로를 중심으로 도심을 형성하고 있다. 시청 소재지는 중구 동인동 1가이고,
+            별관은 산격동 옛 경북도청 부지와 건물을 사용하고 있다. 행정구역은 7구 1군이다.</div>
     </div>
-    <div id="bottom">asdsadadaddsadadaddsad
-        adaddsadadaddsadadaddsadadaddsadada
-        ddsadadaddsadadaddsadadaddsadadaddsa
-        dadaddsadadaddsadadaddsadadaddsadada
-        dsadadaddsadadaddsadadaddsadadaddsada
-        daddsadadaddsadadaddsadadaddsadadadds
-        adadaddsasdsadadaddsadadaddsadadaddsad
-        adaddsadadaddsadadaddsadadaddsadadaddsa
-        dadaddsadadaddsadadaddsadadaddsadadadds
-        adadaddsadadaddsadadaddsadadaddsadadadd
-        sadadaddsadadaddsadadaddsadadaddsadadadd
-        sadadaddsadadaddsadadaddsadadaddsadadadd
-        sadadaddsadadadsadadadadaddsadadaddsadad
-        addsadadadsadad</div>
-</div>
+
+    <div id="container">
+        <div id="top"> 한옥마을의 가치 전주</div>
+        <div id="middle">
+            <div id ="left_top"></div>
+            <div id ="left_bottom"></div>
+            <div id ="left_top"></div>
+            <div id ="left_top"></div>
+        </div>
+        <div id="bottom">전주시는 전라북도의 도청소재지로 동경 127˚ 북위35˚에 위치하고, 전라북도의 중앙부를 북동으로부터 남서로 뻗어있는 노령산맥의 지류인 기린봉, 고덕산, 남고산, 모악산
+            그리고 완산칠봉등이 시가지의 동·남·서방에 둘러싸여 분지를 이루고 있다.
+            전주시가지 대부분은 전주천 충적토상에 건설되어 대체로 평탄하여 남동방 전주천변에서 북서방으로 향하여 완만한 경사를 이루고 있다.
+            전주천은 전주역의 남동방 26km의 관촌평야와 경계한 분수령에서 기원하여 시가지의 중심을 남동방에서 북서방으로 관통하고 삼천은 노령산맥 북부를 흐르고 있는 섬진강의 북평 분수령인 임실군 운암면과
+            완주군 구이면계에서 시작하여 전주시 서부 농경지를 남방에서 북방으로 흐르다가 전주천에서 삼천과 합류하여 만경강으로 흐른다.
+            또한 소양천은 곰치에서 기원하여 전주시역의 북동경계를 흘러 전주천과 합류되며 3개의 하천이 전주역의 남북으로 흐르고 있다.
+            면적은 206.22㎢, 연평균 기온 13.3℃, 연강수량 1313.1㎜, 행정구역은 2구 35개동으로 구성되어 있다.</div>
+    </div>
+
 </body>
-
 </html>

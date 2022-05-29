@@ -1,24 +1,16 @@
+/*@import url(//fonts.googleapis.com/earlyaccess/hanna.css);*/
 * {
     margin: 0;
     padding: 0;
 }
-.a{
-    width: 100%;
-    height: 1000px;
-    overflow: hidden;
-}
-
 .a img{
-    max-width: 100%;
-    height: auto;
     display: block;
-    width: 500px;
-    margin : 0 auto 0 auto;
+    width: 1000px;
+    margin : 100px auto 100px auto;
     animation: fadein 3s;
     -moz-animation: fadein 3s; /* Firefox */
     -webkit-animation: fadein 3s; /* Safari and Chrome */
     -o-animation: fadein 3s; /* Opera */
-    background-color: rgb(245, 250, 255);
   }
   @keyframes fadein {
       from {
@@ -52,43 +44,62 @@
           opacity: 1;
       }
   }
-body {
-    background-color: white;
-}
 
+
+body{
+    width: 1200px;
+    margin: 10px auto;
+}
 /*수평정렬
 자손에게 float 속성을 지정, 부모의 overflow 속성을 hidden으로 적용*/
 div.container{
     overflow:hidden;
 }
 
-#container {
-    float:middle;
-    margin: 100px 200px 100px 200px;
+.img {
+    position: absolute;
 }
-
 
 #top {
     text-align: center;
     font-size: 50px;
     margin-bottom: 100px;
+    margin-top: 100px;
 }
 
-#middle{
+#middle {
+    margin: 0 auto 0 auto;
+    width: 100%; height: 800px;
     overflow: hidden;
-
+    position: relative;
 }
-
-#middle img{
-    width: 720px; height: 480px;
-    margin : 5px;
-    padding: 5px;
-    float: left;
-}
-
 
 #bottom {
-    margin-top : 10px;
+    margin-top : 50px;
+    margin-bottom: 30px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'Hanna', sans-serif;
+}
+
+#left{
+
+    left: 20px;  top:10px;
+    height: 780px;
+    width: 45%;
+}
+
+#right_top{
+    right: 20px; top: 10px;
+    height: 380px;
+    width: 48%;
+}
+#right_bottom{
+    right: 20px; bottom: 10px;
+    height: 380px;
+    width: 48%;
+}
+#center{
+    width: 100%;
+    height: 100%;
 }
