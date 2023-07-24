@@ -13,6 +13,11 @@ WITH KOREA 프로젝트는 HTML과 CSS의 기본 개념을 공부하기 위한 �
 
 이러한 의미에서 지속적으로 공부할 수 있는 사이트로 WITH KOREA 선택했습니다.
 
+<img width= "80%" src="https://github.com/HS-hyeokjin/WithKorea/assets/90303458/1a2bd33a-233d-4b67-ad21-8de359e21af2"/>
+
+
+<img width= "80%" src="https://github.com/HS-hyeokjin/WithKorea/assets/90303458/10c26fb6-a88b-4a3a-b38a-ea7738b01077"/>
+
 ## 프로젝트 상세
 
 ### 수평 정렬
