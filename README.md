@@ -14,8 +14,9 @@ WITH KOREA 프로젝트는 HTML과 CSS의 기본 개념을 공부하기 위한 �
 
 ### 수평 정렬
 
-메인페이지에서 부모에게 hidden 속성을 적용하고 자손에게 float 속성을 적용함으로써 수평 정렬 한다.
+메인페이지에서 상위에 hidden 속성을 적용하고 하위에 float 속성을 적용함으로써 수평 정렬 합니다.
 
+<img width= "50%" src="https://github.com/HS-hyeokjin/WithKorea/assets/90303458/c8826aad-696f-49c6-8ab9-cb395ebaf177"/>
 
 [소스코드] main.css
 ```
@@ -28,7 +29,9 @@ div.container{ overflow:hidden;
 
 ### 중앙 정렬
 
-width 속성을 1000px 로 두고 양쪽을 auto 로 둠으로써 이미지들을 중앙 정렬 한다.
+width 속성을 1000px 로 두고 양쪽을 auto 로 둠으로써 이미지들을 중앙 정렬 합니다.
+
+<img width= "50%" src="https://github.com/HS-hyeokjin/WithKorea/assets/90303458/f250d3b6-4579-4ef5-8882-592b77fcb56b"/>
 
 [소스코드] seoul.css
 ```
@@ -40,7 +43,10 @@ width 속성을 1000px 로 두고 양쪽을 auto 로 둠으로써 이미지들�
 
 ### One True 레이아웃을 구성
 
-one-true 레이아웃을 이용하여 한가지 컨테이너를 구성한다. top middle bottom 으로 나눴으며 각 각 제목 이미지 내용을 담당한다.
+one-true 레이아웃을 이용하여 한가지 컨테이너를 구성하며,
+top middle bottom 으로 나눠 각 각 제목 이미지 내용을 담당합니다.
+
+<img width= "50%" src="https://github.com/HS-hyeokjin/WithKorea/assets/90303458/17b61d2d-0059-473a-a197-ca043fa1da6b"/>
 
 [소스코드] seoul.css
 ```
@@ -55,7 +61,9 @@ one-true 레이아웃을 이용하여 한가지 컨테이너를 구성한다. to
 
 ### 절대 좌표를 활용
 
-절대좌표를 사용하여 one-true 레이아웃 내에 이미지를 자유롭게 배치하였다.
+절대좌표를 사용하여 one-true 레이아웃 내에 이미지를 자유롭게 배치하였습니다.
+
+<img width= "50%" src="https://github.com/HS-hyeokjin/WithKorea/assets/90303458/d5d00e0f-b048-41eb-92e8-9132cc0bb70a"/>
 
 [소스코드] seoul.css
 ```
@@ -76,7 +84,10 @@ one-true 레이아웃을 이용하여 한가지 컨테이너를 구성한다. to
 
 
 ### 반응형 웹 구현
-@media를 이용하여 화면이 700px 이하로 줄었을 경우 네비게이션바를 새로 정렬하도록 하였다.
+
+@media를 이용하여 화면이 700px 이하로 줄었을 경우 네비게이션바를 새로 정렬하도록 하였습니다.
+
+<img width= "50%" src="https://github.com/HS-hyeokjin/WithKorea/assets/90303458/196a7766-d94d-4113-a629-a2e8de8d00a6"/>
 
 [소스코드] top.css
 ```
@@ -85,10 +96,13 @@ one-true 레이아웃을 이용하여 한가지 컨테이너를 구성한다. to
 
 
 ### 자바스크립트, 객체, 문서객체모델(DOM), jQuery 라이브러리, jQuery 플러그인 사용
+
 자바스크립트,객체,jQuery를 사용하여 이미지를 페이드 인 하고
-로고 이미지에 애니메이션 효과를 넣었다.
+로고 이미지에 애니메이션 효과를 넣었습니다.
 *width 700px 이상
 *width 700px 이하
+
+<img width= "50%" src="https://github.com/HS-hyeokjin/WithKorea/assets/90303458/74af3b2e-2ac3-410c-944f-b2e6c442c057"/>
 
 [소스코드] main.js
 ```
@@ -117,13 +131,19 @@ $(window).scroll( function(){ $('img').each( function(i){
 ```
 
 
-2.7. 효과적인 디자인 구성 적용
+### 효과적인 디자인 구성 적용
+
 one ture layout 과 절대좌표로 이미지를 효과적으로 배치하고
-애니메이션 효과등을 활용하여 디자인을 구성 하였다.
+애니메이션 효과등을 활용하여 디자인을 구성 하였습니다.
+
+<img width= "50%" src="https://github.com/HS-hyeokjin/WithKorea/assets/90303458/815511ff-7f64-4aed-93c3-b6a211b2c2c3"/>
 
 
-2.8. 오디오 및 동영상 활용 가능(option)
-마지막으로 페이지 하단에 오디오 태그를 자동재생으로 넣어 사용자에게 음악재생을 제공했다.
+### 오디오 및 동영상 활용
+마지막으로 페이지 하단에 오디오 태그를 자동재생으로 넣어 사용자에게 음악재생을 제공했습니다.
+
+<img width= "50%" src="https://github.com/HS-hyeokjin/WithKorea/assets/90303458/9f297948-fe19-4c81-80e8-4570deddcf6a"/>
+
 [소스코드] index.html
 ```
 <audio src="Upbeat Ukulele Background Music - That Positive Feeling by Alumo (1).mp3" controls autoplay></audio>
